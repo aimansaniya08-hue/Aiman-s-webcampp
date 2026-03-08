@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<div class="logo">Portfolio</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#schedule">Schedule</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<section>
+    <h2 id="typing"></h2>
+</section>
+<section id="home" class="hero">
+<div class="hero-content">
+<img src="photo.jpeg" alt="profile" >
+<h1>AIMAN SANIYA.</h1>
+<p>Frontend Developer | Web Enthusiast | Tech Learner |</p>
+<a href="#projects" class="btn">View My Work</a>
+</div>
+</section>
+<section id="about" class="section">
+    <h2>About Me</h2>
+<p>
+ hey!!! I'm Aiman. I am passionate about building modern websites and learning new
+technologies. I enjoy creating user friendly interfaces and exploring
+the world of web development.
+</p>
+</section>
+<section id="skills" class="section">
+<h2>My Skills</h2>
+<div class="skills-container">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">GitHub</div>
+<div class="skill">JavaScript</div>
+<div class="skill">C</div>
+<div class="skill">java</div>
+<div class="skill">python</div>
+<div class="skill">All basic programming</div>
+</div>
+<br>
+<div class="skillbar">
+  <div class="html">HTML</div>
+  <div class="programming">Programming</div>
+</div>
+</section>
+<section id="projects" class="section">
+<section>
+<h2>My Projects</h2>
+<div class="project-container">
+<div class="card">
+<h3>Calculator</h3>
+<p>Simple calculator project</p>
+<a href="#">View Project</a>
+</div>
+<div class="card">
+<h3>Profile Page</h3>
+<p>Simple profile page built using HTML.</p>
+<a href="#">View Project</a>
+</div>
+<div class="card">
+<h3>Registration Form</h3>
+<p>HTML form to collect student information.</p>
+<a href="#">View Project</a>
+</div>
+<div class="card">
+<h3>Timetable</h3>
+<p>Class schedule built using HTML tables.</p>
+<a href="#">View Project</a>
+</div>
+</section>
+</section>
+<section id="schedule" class="section">
+<h2>Learning Schedule</h2>
+<table>
+<tr>
+<th>Day</th>
+<th>Topic</th>
+<th>Time</th>
+</tr>
+<tr>
+<td>Monday</td>
+<td>HTML</td>
+<td>10:00 AM</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>CSS</td>
+<td>11:00 AM</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>Flexbox</td>
+<td>12:00 PM</td>
+</tr>
+<tr>
+    <td>Thursday</td>
+<td>Git & GitHub</td>
+<td>01:00 PM</td>
+</tr>
+</table>
+</section>
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+<!-- AI Chatbox Section -->
+<section>
+<h2> Aiman's AI Assistant</h2>
+<div class="chatbox">
+<input type="text" id="userInput" placeholder="Ask me something">
+<button onclick="reply()">Send</button>
+<p id="botReply"></p>
+</div>
+</section>
+<script>
+function reply(){
+let input = document.getElementById("userInput").value;
+if(input == "skills"){
+document.getElementById("botReply").innerText="I know HTML and CSS and basic programming.";
+}
+else{
+document.getElementById("botReply").innerText="Ask about my skills or projects!";
+}
+}
+</script>
+<script>
+let text = "Hey!!, I'm Aiman – Web Developer, AI Enthusiast.";
+let i = 0;
+function typing(){
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typing,100);
+}
+}
+typing();
+</script>
+<footer>
+<p>© 2026 AIMAN SANIYA.</p>
+<p>Email : aimansaniya08@gmail.com</p>
+<p>GitHub:https:// github.com/aimansaniya</p>
+</footer>
+</body>
+</html>
